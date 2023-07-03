@@ -58,6 +58,6 @@ while True :
 
     conn.close()
 
-    time.sleep(0)
+    time.sleep(120)
 
     
