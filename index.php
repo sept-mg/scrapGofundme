@@ -42,7 +42,7 @@ if (isset($_GET['page'])) {
     <title>laliste des racelars</title>
 </head>
 
-<h1 style="text-align: center;">>liste des participants de la cagnote du policier</h1>
+<h1 style="text-align: center;">>liste des participants de la cagnotte du policier</h1>
 
 <body>
     <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
