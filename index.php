@@ -43,8 +43,8 @@ if (isset($_GET['page'])) {
 </head>
 <body>
     <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
-        <a href="<?php echo $nbpage - 1; ?>">preview</a>
-        <a href="<?php echo $nbpage + 1; ?>">next</a>
+        <a href="?page=<?php echo $nbpage - 1; ?>">preview</a>
+        <a href="?page=<?php echo $nbpage + 1; ?>">next</a>
     </div>
 </br>
 <table>
