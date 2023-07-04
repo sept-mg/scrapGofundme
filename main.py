@@ -19,6 +19,7 @@ cursor.execute(
     )
     '''
 )
+conn.commit()
 conn.close()
 
 def start(i, conn, cursor):
