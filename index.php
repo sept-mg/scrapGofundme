@@ -42,6 +42,11 @@ if (isset($_GET['page'])) {
     <title>laliste des racelars</title>
 </head>
 <body>
+    <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
+        <a href="<?php echo $nbpage - 1; ?>">preview</a>
+        <a href="<?php echo $nbpage + 1; ?>">next</a>
+    </div>
+</br>
 <table>
         <tr>
             <th>Name</th>
