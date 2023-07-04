@@ -55,7 +55,7 @@ if (isset($_GET['page'])) {
             <th>Name</th>
             <th>Amount</th>
             <th>Donation-ID</th>
-            <th>Created-At-(GMT-5)</th>
+            <th>Created-At-(UTC-5)</th>
         </tr>
         <?php while ($row = $results->fetchArray(SQLITE3_BOTH)) { ?>
             <tr>
