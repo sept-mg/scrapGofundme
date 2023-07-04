@@ -41,6 +41,9 @@ if (isset($_GET['page'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>laliste des racelars</title>
 </head>
+
+<h1 style="text-align: center;">>la liste des participants qui ont mis dans la cagnotes du policier</h1>
+
 <body>
     <div style="display: flex; flex-direction: row; justify-content: space-evenly;">
         <a href="?page=<?php echo $nbpage - 1; ?>">preview</a>
