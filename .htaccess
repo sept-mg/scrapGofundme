@@ -1,6 +1,6 @@
 Options -Indexes
 
 
-<FilesMatch "\.(py|0|html|db)$">
+<FilesMatch "\.(py|0|html|db|yml)$">
 	Deny from all
 </FilesMatch>
