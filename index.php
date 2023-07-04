@@ -14,7 +14,7 @@ if (isset($_GET['page'])) {
         $db = new SQLite3('donations.db');
 
         // Définir la limite de résultats par page
-        $limit_per_page = 1000;
+        $limit_per_page = 5000;
 
         $offset = ($nbpage - 1) * $limit_per_page;
 
