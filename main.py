@@ -4,7 +4,6 @@ offset = 1
 url = f"https://gateway.gofundme.com/web-gateway/v1/feed/z86fy-soutien-pour-la-famille-du-policier-de-nanterre/donations?limit={limit}&offset="
 
 i = 0
-data = []
 
 conn = sqlite3.connect('donations.db')
 cursor = conn.cursor()
