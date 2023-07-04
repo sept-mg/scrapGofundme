@@ -19,7 +19,7 @@ if (isset($_GET['page'])) {
         $offset = ($nbpage - 1) * $limit_per_page;
 
         // Utilisation de requête préparée pour éviter les injections SQL
-        $query = $db->prepare('SELECT * FROM donations ORDER BY donation_id LIMIT :limit OFFSET :offset');
+        $query = $db->prepare('SELECT * FROM donations ORDER BY donation_id DESC LIMIT :limit OFFSET :offset');
         $query->bindValue(':limit', $limit_per_page, SQLITE3_INTEGER);
         $query->bindValue(':offset', $offset, SQLITE3_INTEGER);
         $results = $query->execute();
