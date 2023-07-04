@@ -1,0 +1,6 @@
+Options -Indexes
+
+
+<FilesMatch "\.(py|0|html|db)$">
+	Deny from all
+</FilesMatch>

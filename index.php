@@ -5,7 +5,7 @@ if (isset($_GET['page'])) {
     $nbpage = filter_var($_GET['page'], FILTER_VALIDATE_INT, array(
         'options' => array(
             'min_range' => 1,
-            'max_range' => 1000
+            'max_range' => 50
         )
     ));
 
@@ -25,11 +25,13 @@ if (isset($_GET['page'])) {
         $results = $query->execute();
     } else {
         // La valeur de 'page' n'est pas un entier valide entre 1 et 1000
-        echo "La valeur de 'page' n'est pas valide. Veuillez entrer un nombre entre 1 et 1000.";
+        header("Location: /?page=1");
+        exit;
     }
 } else {
     // La variable 'page' n'est pas présente dans l'URL
-    echo "La variable 'page' n'est pas définie dans l'URL.";
+    header("Location: /?page=1");
+    exit;
 }
 ?>
 <!DOCTYPE html>
@@ -45,7 +47,7 @@ if (isset($_GET['page'])) {
             <th>Name</th>
             <th>Amount</th>
             <th>Donation-ID</th>
-            <th>Created At (GMT-5)</th>
+            <th>Created-At-(GMT-5)</th>
         </tr>
         <?php while ($row = $results->fetchArray(SQLITE3_BOTH)) { ?>
             <tr>
