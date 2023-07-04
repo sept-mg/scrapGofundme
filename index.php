@@ -5,7 +5,7 @@ if (isset($_GET['page'])) {
     $nbpage = filter_var($_GET['page'], FILTER_VALIDATE_INT, array(
         'options' => array(
             'min_range' => 1,
-            'max_range' => 50
+            'max_range' => 10
         )
     ));
 
@@ -14,7 +14,7 @@ if (isset($_GET['page'])) {
         $db = new SQLite3('donations.db');
 
         // Définir la limite de résultats par page
-        $limit_per_page = 500;
+        $limit_per_page = 1000;
 
         $offset = ($nbpage - 1) * $limit_per_page;
 
