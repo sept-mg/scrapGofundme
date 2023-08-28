@@ -39,7 +39,7 @@ if (isset($_GET['page'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>laliste des racelars</title>
+    <title>laliste des donateurs</title>
 </head>
 
 <h1 style="text-align: center;">>liste des participants de la cagnotte du policier</h1>
