@@ -1,3 +1,3 @@
 # scrapGofundme
 
-now online [here](http://lalist.ddns.net/)
+now online [here](https://laliste.ddns.net/)
